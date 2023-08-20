@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Config.cpp" />
+    <ClCompile Include="CVector.cpp" />
+    <ClCompile Include="imgui\imgui.cpp" />
+    <ClCompile Include="imgui\imgui_demo.cpp" />
+    <ClCompile Include="imgui\imgui_draw.cpp" />
+    <ClCompile Include="imgui\imgui_impl_dx9.cpp" />
+    <ClCompile Include="imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="imgui\imgui_tables.cpp" />
+    <ClCompile Include="imgui\imgui_widgets.cpp" />
+    <ClCompile Include="kthook\hde\hde32.c" />
+    <ClCompile Include="kthook\hde\hde64.c" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="APatch\APatch.h" />
+    <ClInclude Include="CDeathWindow.h" />
+    <ClInclude Include="Config.h" />
+    <ClInclude Include="CVector.h" />
+    <ClInclude Include="gtaweap3.h" />
+    <ClInclude Include="imgui\imconfig.h" />
+    <ClInclude Include="imgui\imgui.h" />
+    <ClInclude Include="imgui\imgui_impl_dx9.h" />
+    <ClInclude Include="imgui\imgui_impl_win32.h" />
+    <ClInclude Include="imgui\imgui_internal.h" />
+    <ClInclude Include="imgui\imstb_rectpack.h" />
+    <ClInclude Include="imgui\imstb_textedit.h" />
+    <ClInclude Include="imgui\imstb_truetype.h" />
+    <ClInclude Include="JSON\json\include\nlohmann\adl_serializer.hpp" />
+    <ClInclude Include="JSON\json\include\nlohmann\byte_container_with_subtype.hpp" />
+    <ClInclude Include="JSON\json\include\nlohmann\detail\boolean_operators.hpp" />
+    <ClInclude Include="JSON\json\include\nlohmann\detail\conversions\from_json.hpp" />
+    <ClInclude Include="JSON\json\include\nlohmann\detail\conversions\to_chars.hpp" />
+    <ClInclude Include="JSON\json\include\nlohmann\detail\conversions\to_json.hpp" />
+    <ClInclude Include="JSON\json\include\nlohmann\detail\exceptions.hpp" />
+    <ClInclude Include="JSON\json\include\nlohmann\detail\input\binary_reader.hpp" />
+    <ClInclude Include="JSON\json\include\nlohmann\detail\input\input_adapters.hpp" />
+    <ClInclude Include="JSON\json\include\nlohmann\detail\input\json_sax.hpp" />
+    <ClInclude Include="JSON\json\include\nlohmann\detail\input\lexer.hpp" />
+    <ClInclude Include="JSON\json\include\nlohmann\detail\input\parser.hpp" />
+    <ClInclude Include="JSON\json\include\nlohmann\detail\input\position_t.hpp" />
+    <ClInclude Include="JSON\json\include\nlohmann\detail\iterators\internal_iterator.hpp" />
+    <ClInclude Include="JSON\json\include\nlohmann\detail\iterators\iteration_proxy.hpp" />
+    <ClInclude Include="JSON\json\include\nlohmann\detail\iterators\iterator_traits.hpp" />
+    <ClInclude Include="JSON\json\include\nlohmann\detail\iterators\iter_impl.hpp" />
+    <ClInclude Include="JSON\json\include\nlohmann\detail\iterators\json_reverse_iterator.hpp" />
+    <ClInclude Include="JSON\json\include\nlohmann\detail\iterators\primitive_iterator.hpp" />
+    <ClInclude Include="JSON\json\include\nlohmann\detail\json_pointer.hpp" />
+    <ClInclude Include="JSON\json\include\nlohmann\detail\json_ref.hpp" />
+    <ClInclude Include="JSON\json\include\nlohmann\detail\macro_scope.hpp" />
+    <ClInclude Include="JSON\json\include\nlohmann\detail\macro_unscope.hpp" />
+    <ClInclude Include="JSON\json\include\nlohmann\detail\meta\cpp_future.hpp" />
+    <ClInclude Include="JSON\json\include\nlohmann\detail\meta\detected.hpp" />
+    <ClInclude Include="JSON\json\include\nlohmann\detail\meta\is_sax.hpp" />
+    <ClInclude Include="JSON\json\include\nlohmann\detail\meta\type_traits.hpp" />
+    <ClInclude Include="JSON\json\include\nlohmann\detail\meta\void_t.hpp" />
+    <ClInclude Include="JSON\json\include\nlohmann\detail\output\binary_writer.hpp" />
+    <ClInclude Include="JSON\json\include\nlohmann\detail\output\output_adapters.hpp" />
+    <ClInclude Include="JSON\json\include\nlohmann\detail\output\serializer.hpp" />
+    <ClInclude Include="JSON\json\include\nlohmann\detail\value_t.hpp" />
+    <ClInclude Include="JSON\json\include\nlohmann\json.hpp" />
+    <ClInclude Include="JSON\json\include\nlohmann\json_fwd.hpp" />
+    <ClInclude Include="JSON\json\include\nlohmann\thirdparty\hedley\hedley.hpp" />
+    <ClInclude Include="JSON\json\include\nlohmann\thirdparty\hedley\hedley_undef.hpp" />
+    <ClInclude Include="JSON\json\single_include\nlohmann\json.hpp" />
+    <ClInclude Include="kthook\hde\hde32.h" />
+    <ClInclude Include="kthook\hde\hde64.h" />
+    <ClInclude Include="kthook\hde\table32.h" />
+    <ClInclude Include="kthook\hde\table64.h" />
+    <ClInclude Include="kthook\include\kthook\kthook.hpp" />
+    <ClInclude Include="kthook\include\kthook\x64\kthook_detail.hpp" />
+    <ClInclude Include="kthook\include\kthook\x64\kthook_impl.hpp" />
+    <ClInclude Include="kthook\include\kthook\x86\kthook_detail.hpp" />
+    <ClInclude Include="kthook\include\kthook\x86\kthook_impl.hpp" />
+    <ClInclude Include="kthook\include\kthook\x86_64\kthook_x86_64_detail.hpp" />
+    <ClInclude Include="kthook\ktsignal\ktsignal.hpp" />
+    <ClInclude Include="kthook\xbyak\xbyak.h" />
+    <ClInclude Include="kthook\xbyak\xbyak_bin2hex.h" />
+    <ClInclude Include="kthook\xbyak\xbyak_mnemonic.h" />
+    <ClInclude Include="kthook\xbyak\xbyak_util.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="nlohmann\adl_serializer.hpp" />
+    <ClInclude Include="nlohmann\byte_container_with_subtype.hpp" />
+    <ClInclude Include="nlohmann\detail\abi_macros.hpp" />
+    <ClInclude Include="nlohmann\detail\conversions\from_json.hpp" />
+    <ClInclude Include="nlohmann\detail\conversions\to_chars.hpp" />
+    <ClInclude Include="nlohmann\detail\conversions\to_json.hpp" />
+    <ClInclude Include="nlohmann\detail\exceptions.hpp" />
+    <ClInclude Include="nlohmann\detail\hash.hpp" />
+    <ClInclude Include="nlohmann\detail\input\binary_reader.hpp" />
+    <ClInclude Include="nlohmann\detail\input\input_adapters.hpp" />
+    <ClInclude Include="nlohmann\detail\input\json_sax.hpp" />
+    <ClInclude Include="nlohmann\detail\input\lexer.hpp" />
+    <ClInclude Include="nlohmann\detail\input\parser.hpp" />
+    <ClInclude Include="nlohmann\detail\input\position_t.hpp" />
+    <ClInclude Include="nlohmann\detail\iterators\internal_iterator.hpp" />
+    <ClInclude Include="nlohmann\detail\iterators\iteration_proxy.hpp" />
+    <ClInclude Include="nlohmann\detail\iterators\iterator_traits.hpp" />
+    <ClInclude Include="nlohmann\detail\iterators\iter_impl.hpp" />
+    <ClInclude Include="nlohmann\detail\iterators\json_reverse_iterator.hpp" />
+    <ClInclude Include="nlohmann\detail\iterators\primitive_iterator.hpp" />
+    <ClInclude Include="nlohmann\detail\json_custom_base_class.hpp" />
+    <ClInclude Include="nlohmann\detail\json_pointer.hpp" />
+    <ClInclude Include="nlohmann\detail\json_ref.hpp" />
+    <ClInclude Include="nlohmann\detail\macro_scope.hpp" />
+    <ClInclude Include="nlohmann\detail\macro_unscope.hpp" />
+    <ClInclude Include="nlohmann\detail\meta\call_std\begin.hpp" />
+    <ClInclude Include="nlohmann\detail\meta\call_std\end.hpp" />
+    <ClInclude Include="nlohmann\detail\meta\cpp_future.hpp" />
+    <ClInclude Include="nlohmann\detail\meta\detected.hpp" />
+    <ClInclude Include="nlohmann\detail\meta\identity_tag.hpp" />
+    <ClInclude Include="nlohmann\detail\meta\is_sax.hpp" />
+    <ClInclude Include="nlohmann\detail\meta\std_fs.hpp" />
+    <ClInclude Include="nlohmann\detail\meta\type_traits.hpp" />
+    <ClInclude Include="nlohmann\detail\meta\void_t.hpp" />
+    <ClInclude Include="nlohmann\detail\output\binary_writer.hpp" />
+    <ClInclude Include="nlohmann\detail\output\output_adapters.hpp" />
+    <ClInclude Include="nlohmann\detail\output\serializer.hpp" />
+    <ClInclude Include="nlohmann\detail\string_concat.hpp" />
+    <ClInclude Include="nlohmann\detail\string_escape.hpp" />
+    <ClInclude Include="nlohmann\detail\value_t.hpp" />
+    <ClInclude Include="nlohmann\json.hpp" />
+    <ClInclude Include="nlohmann\json_fwd.hpp" />
+    <ClInclude Include="nlohmann\ordered_map.hpp" />
+    <ClInclude Include="nlohmann\thirdparty\hedley\hedley.hpp" />
+    <ClInclude Include="nlohmann\thirdparty\hedley\hedley_undef.hpp" />
+    <ClInclude Include="samp.hpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{33363f0a-c644-4e54-b4b0-f43f00f2c2b4}</ProjectGuid>
+    <RootNamespace>ImGuiTemplate</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>ImGuiDeathWindow</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <TargetExt>.asi</TargetExt>
+    <OutDir>D:\GTA San Andreas</OutDir>
+    <IncludePath>$(DXSDK_DIR)Include;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)Lib\x86;$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86)</LibraryPath>
+    <TargetName>ImGuiDeathWindow</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;DLL3_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;DLL3_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>D:\Projects\ImGuiDeathWindow\ImGuiTemplate\JSON\json\include;.\imgui;.\kthook\include;.\kthook;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;DLL3_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;DLL3_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
